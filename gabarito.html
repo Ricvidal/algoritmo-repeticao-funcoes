@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br"/>
+<head>
+   <meta charset = "UTF-8"/>
+     <title>GABARITO</title>
+   <style type="text/css">
+          body {
+          background-color:rgba(60,60,60,0.5);
+          color: rgba(40,40,50,1); 
+          }
+        input {
+          background-color:rgba(700,600,500,0.5);
+          color:rgba(0,0,0,1);
+          }
+          h1 {
+          color: rgba(00,6,45,1);
+          }
+        p#quantidade{ 
+          color: rgba(200,00,00,1);
+          font-size: 30px;
+        }
+        p#gab{ 
+          color: rgba(200,00,00,1);
+          font-size: 30px;
+        }
+        p#certas{ 
+          color: rgba(200,00,00,1);
+          font-size: 30px;
+        }
+        p#resp{ 
+          color: rgba(200,00,00,1);
+          font-size: 30px;
+        }
+   </style>
+</head>
+<body>
+<script type="text/javascript"
+		src="gabarito.js">
+</script>
+<h1  style="text-decoration:underline;">GABARITO</h1>
+<form>
+  <p>
+<label>NÚMERO DE QUESTÕES: 
+<input  name="nQuestoes"
+        type="text" 
+        maxlength="3"
+        size="4"
+        id="nQuestoes"/>
+</label>
+<P/>
+<p>
+<label>GABARITO: 
+<input 	name="gabarito"
+		    type="text" 
+		    maxlength="60"
+		    size="61"
+		    id="gabarito"/>
+</label>
+<P/>
+<label> RESPOSTA DO ALUNO:
+<input	name="resposta"
+		    type="text" 
+		    maxlength="60"
+		    size="61"
+		    id="resposta"/>
+</input>
+</label>
+<label>
+<input  name="função"
+        type="button"
+        onclick="corrigir()"
+        value="CORRIGIR"/>					
+</label>
+</p>
+<p id=quantidade></p>
+<p id=gab></p>
+<p id=resp></p>
+<p id=certas></p>
+</body>
+</html>

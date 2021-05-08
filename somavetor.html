@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br"/>
+<head>
+   <meta charset = "UTF-8"/>
+     <title>SOMA</title>
+   <style type="text/css">
+          body {
+          background-color:rgba(60,60,60,0.5);
+          color: rgba(40,40,50,1); 
+          }
+        input {
+          background-color:rgba(700,600,500,0.5);
+          color:rgba(0,0,0,1);
+          }
+          h1 {
+          color: rgba(00,6,45,1);
+          }
+        p#quantidade{ 
+          color: rgba(200,00,00,1);
+          font-size: 30px;
+        }
+        p#gab{ 
+          color: rgba(200,00,00,1);
+          font-size: 30px;
+        }
+        p#certas{ 
+          color: rgba(200,00,00,1);
+          font-size: 30px;
+        }
+        p#resp{ 
+          color: rgba(200,00,00,1);
+          font-size: 30px;
+        }
+   </style>
+</head>
+<body>
+<script type="text/javascript"
+		    src="somavetor.js">
+</script>
+<h1  style="text-decoration:underline;">SOMA VETOR</h1>
+<form>
+  <p>
+<label>DIGITE A 1ª LISTA: 
+<input  name="lista1"
+        type="text" 
+        maxlength="40"
+        size="41"
+        id="list1"/>
+</label>
+<P/>
+<p>
+<label>DIGITE A 2ª LISTA: 
+<input 	name="lista2"
+		    type="text" 
+		    maxlength="40"
+		    size="41"
+		    id="list2"/>
+</label>
+<P/>
+<label> RESPOSTA:
+<input	name="resposta"
+		    type="text" 
+		    maxlength="49"
+		    size="50"
+		    id="resposta"/>
+</input>
+</label>
+<label>
+<input  name="função"
+        type="button"
+        onclick="auxiliar()"
+        value="SOMAR"/>					
+</label>
+</p>
+</body>
+</html>
